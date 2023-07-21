@@ -90,11 +90,22 @@ body {
     }
 }
 
-@media (max-width: 343px) {
+@media (max-width: 375px) {
     .container {
+        width: 343px;
         flex-direction: column-reverse;
         height: 350px;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .container .left h1 {
+        font: 700 28px Inter;
+        text-align: center;
+    }
+
+    .container .left p {
+        font: 400 18px Inter;
+        text-align: center;
     }
 }
