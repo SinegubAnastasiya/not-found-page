@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+body {
+    max-width: 1220px;
+    height: 100vh;
+    background: var(--background-bg-secondary, #161622);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 303px;
+}
+
+.container .left {
+    max-width: 590px;
+}
+
+.container .left p {
+    color: var(--text-txt-secondary, rgba(255, 255, 255, 0.75));
+    font: 400 24px Inter;
+}
+
+.container .left h1 {
+    color: var(--text-txt-primary, rgba(255, 255, 255, 0.90));
+    font: 700 48px Inter;
+    margin-top: 16px;
+}
+
+.container .left .buttons {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.container .left .buttons div {
+    border-radius: 8px;
+    background: var(--brand-primary, #6F1DF4);
+    width: 145px;
+    color: var(--pallete-white, #FFF);
+    text-align: center;
+    font: 700 16px Inter;
+    padding: 15px 0;
+}
+
+.container .right {
+    background-image: url(./assets/404light.png);
+    width: 510px;
+    height: 195px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+} 
+
+@media (max-width: 768px) {
+    body {
+        max-width: 408px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        max-width: 408px;
+        height: 400px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .right {
+        width: 408px;
+        height: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .left p {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 32px;
+    }
+    
+    .container .left h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-top: 16px;
+    }
+
+    .container .left .buttons {
+        margin: auto;
+        margin-top: 32px;
+    }
+
+    .container .left .buttons .btn1 {
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 375px)  {
+    body {
+        max-width: 375px;
+    }
+
+    .container {
+        max-width: 343px;
+    }
+
+    .container .left p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 32px;
+    }
+    
+    .container .left h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-top: 16px;
+    }
+
+    .container .right {
+        width: 230px;
+        height: 90px;
+    }
+
+    .container .left .buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        gap: 20px;    
+    }
+
+    .container .left .buttons .btn1,
+    .container .left .buttons .btn2 {
+        width: 100%;
+    }
+}
